@@ -1,26 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Venkata Sai Ram Nadella</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkata Sai Ram Nadella - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    nav {
+      background: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #764ba2;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .project {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Venkata Sai Ram Nadella</h1>
-    <nav>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <p>Power BI | SQL | Data Visualization Specialist</p>
   </header>
-  <main>
-    <section class="hero">
-      <h2>Microsoft Certified Power BI Professional</h2>
-      <p>12+ years of experience in data analysis, visualization, and storytelling</p>
-    </section>
-  </main>
-  <script src="script.js"></script>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I specialize in performing comprehensive data analysis to extract insights and develop clear and informative visualizations using Power BI. With over 12 years of experience, I'm passionate about making data-driven decisions that drive business success.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <img src="https://github.com/Venkatasr665/Sales_Report-PowerBI/raw/main/SalesDashboard.png" alt="Sales Dashboard" />
+      <h3>Sales Report using Power BI</h3>
+      <p>A comprehensive Sales Dashboard with insightful visualizations to track sales performance and trends.</p>
+      <a href="https://github.com/Venkatasr665/Sales_Report-PowerBI" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+      <img src="https://github.com/Venkatasr665/Customer-Center-Performance-Report/raw/main/Customer%20care%20center.png" alt="Customer Care Dashboard" />
+      <h3>Customer Center Performance</h3>
+      <p>Analyzes and visualizes call center performance metrics like call volume and satisfaction levels.</p>
+      <a href="https://github.com/Venkatasr665/Customer-Center-Performance-Report" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+      <img src="https://github.com/Venkatasr665/Netflix-PowerBI-Report/raw/main/Netflix%20Dashboard.png" alt="Netflix Dashboard" />
+      <h3>Netflix Analytics Dashboard</h3>
+      <p>An analytical dashboard showcasing trends in Netflix content from 1925–2021.</p>
+      <a href="https://github.com/Venkatasr665/Netflix-PowerBI-Report" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let's connect! I'm open to opportunities and collaboration.</p>
+    <ul>
+      <li>Email: <a href="mailto:venkatasr.nadella@gmail.com">venkatasr.nadella@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/venkata-sai-ram-nadella-05b973319/" target="_blank">Profile</a></li>
+      <li>GitHub: <a href="https://github.com/Venkatasr665" target="_blank">Venkatasr665</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Venkata Sai Ram Nadella. All rights reserved.
+  </footer>
 </body>
+
 </html>
